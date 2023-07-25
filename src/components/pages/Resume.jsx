@@ -1,4 +1,5 @@
 import { Download, WindowSharp } from "@mui/icons-material";
+import hammad from './hammad.jpg'
 import {
   Box,
   Button,
@@ -121,7 +122,7 @@ const Resume = () => {
             <div className="picture" style={{ flex: "2", textAlign: "left" }}>
               <ImageList>
                 <ImageListItem>
-                  <img src="" alt="" srcset="" />
+                  <img src={hammad} style={{width: '200px'}} />
                 </ImageListItem>
               </ImageList>
             </div>
