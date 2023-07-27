@@ -48,11 +48,6 @@ const Contact = () => {
           <TwitterIcon fontSize="large" />
         </IconButton>
       </a>
-      {/* <a href="https://www.freecodecamp.org/hammadaslam10" target="_blank">
-        <IconButton size="large">
-          <TwitterIcon fontSize="large" />
-        </IconButton>
-      </a> */}
     </div>
   );
 };

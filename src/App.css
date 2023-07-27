@@ -9,19 +9,26 @@
 }
 
 .home {
+  height: 89vh;
   text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  /* height: 100vh; */
-  flex-direction: row;
-  /* padding: 50px; */
+  align-items: center;
+  padding: 10px
 }
 
 
 
-/* @media only screen and (max-width: 760px){
-  .links{
-    display: flex;
-  }
-} */
+a{
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.btn>a:hover{
+  background-color: #e6e6e6;
+  color: #121212;
+  border: 1px solid #e6e6e6;
+}

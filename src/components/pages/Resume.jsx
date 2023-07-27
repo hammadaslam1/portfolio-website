@@ -7,6 +7,7 @@ import {
   ImageList,
   ImageListItem,
   Paper,
+  Slider,
   Table,
   TableBody,
   TableCell,
@@ -43,11 +44,66 @@ const Resume = () => {
     createRows("Sep 2014 - 2016", "Matriculation, BISE Sargodha", "64%"),
   ];
   const skillRow = [
-    createRows("HTML", "Very Good"),
-    createRows("CSS", "Very Good"),
-    createRows("JavaScript", "Good"),
-    createRows("Front-End Development", "Good"),
-    createRows("React JS", "Beginner"),
+    createRows(
+      "HTML",
+      <Slider
+        
+        defaultValue={100}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "CSS",
+      <Slider
+        
+        defaultValue={100}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "Front-End Development",
+      <Slider
+      
+      defaultValue={70}
+      valueLabelDisplay="auto"
+      step={10}
+      disabled
+      min={10}
+      max={110}
+      />
+      ),
+      createRows(
+        "JavaScript",
+        <Slider
+          
+          defaultValue={60}
+          valueLabelDisplay="auto"
+          step={10}
+          disabled
+          min={10}
+          max={110}
+        />
+      ),
+      createRows(
+      "React JS",
+      <Slider
+        
+        defaultValue={40}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
   ];
 
   return (
@@ -244,7 +300,7 @@ const Resume = () => {
         startIcon={<Download />}
         sx={{ margin: "10px" }}
         onClick={() => {
-          window.print()
+          window.print();
         }}
       >
         Download PDF
