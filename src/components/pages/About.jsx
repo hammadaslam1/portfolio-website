@@ -2,7 +2,11 @@ import { Box, Typography } from "@mui/material";
 
 const About = () => {
   return (
-    <div>
+    <div
+      style={{
+        padding: "20px",
+      }}
+    >
       <Typography sx={{ fontSize: "40pt" }}>About me</Typography>
       <Box
         sx={{

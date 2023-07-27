@@ -1,5 +1,5 @@
 import { Download, WindowSharp } from "@mui/icons-material";
-import hammad from './hammad.jpg'
+import hammad from "./hammad.jpg";
 import {
   Box,
   Button,
@@ -14,12 +14,8 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import { borderBottom } from "@mui/system";
-// import "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js";
-import jsPDF from "jspdf";
 
 const Resume = () => {
-    const doc = new jsPDF()
   const createRows = (title, value, num = "") => {
     return { title, value, num };
   };
@@ -55,10 +51,10 @@ const Resume = () => {
   ];
 
   return (
-    <div className="main-resume" style={{ padding: "15px" }}>
+    <div className="main-resume" style={{ padding: "20px" }}>
       <Typography sx={{ fontSize: "40pt" }}>My Resume</Typography>
       <Card
-      className="full-resume"
+        className="full-resume"
         sx={{
           width: "900px",
           margin: "auto",
@@ -122,7 +118,10 @@ const Resume = () => {
             <div className="picture" style={{ flex: "2", textAlign: "left" }}>
               <ImageList>
                 <ImageListItem>
-                  <img src={hammad} style={{width: '200px'}} />
+                  <img
+                    src={hammad}
+                    style={{ width: "200px", borderRadius: "3px" }}
+                  />
                 </ImageListItem>
               </ImageList>
             </div>
@@ -239,14 +238,17 @@ const Resume = () => {
           </div>
         </div>
       </Card>
-      <Button variant="contained" color="error" startIcon={<Download />} sx={{margin: '10px'}} onClick={() => {
-        // doc.html(document.getElementById('full-resume'), {
-        //     async callback(doc) {
-        //         doc.save('resume');
-        //     },
-        // });
-        window.print()
-      }}>Download PDF</Button>
+      <Button
+        variant="contained"
+        color="error"
+        startIcon={<Download />}
+        sx={{ margin: "10px" }}
+        onClick={() => {
+          window.print()
+        }}
+      >
+        Download PDF
+      </Button>
     </div>
   );
 };
