@@ -19,32 +19,32 @@ const Contact = () => {
         Contact
       </Typography>
       <a href="https://github.com/hammadaslam1" target="_blank">
-        <IconButton size="large">
+        <IconButton size="large" sx={{boxShadow: '3px 4px 10px #090909'}}>
           <GitHubIcon fontSize="large" />
         </IconButton>
       </a>
       <a href="https://www.linkedin.com/in/hammadaslam10/" target="_blank">
-        <IconButton size="large">
+        <IconButton size="large" sx={{boxShadow: '3px 4px 10px #090909'}}>
           <LinkedInIcon fontSize="large" />
         </IconButton>
       </a>
       <a href="mailto:hammadaslam308@gmail.com" target="_blank">
-        <IconButton size="large">
+        <IconButton size="large" sx={{boxShadow: '3px 4px 10px #090909'}}>
           <MailIcon fontSize="large" />
         </IconButton>
       </a>
       <a href="https://www.instagram.com/hammadaslam10/" target="_blank">
-        <IconButton size="large">
+        <IconButton size="large" sx={{boxShadow: '3px 4px 10px #090909'}}>
           <InstagramIcon fontSize="large" />
         </IconButton>
       </a>
       <a href="https://web.facebook.com/hammadaslam.308" target="_blank">
-        <IconButton size="large">
+        <IconButton size="large" sx={{boxShadow: '3px 4px 10px #090909'}}>
           <FacebookIcon fontSize="large" />
         </IconButton>
       </a>
       <a href="https://twitter.com/HammadAslam_308" target="_blank">
-        <IconButton size="large">
+        <IconButton size="large" sx={{boxShadow: '3px 4px 10px #090909'}}>
           <TwitterIcon fontSize="large" />
         </IconButton>
       </a>

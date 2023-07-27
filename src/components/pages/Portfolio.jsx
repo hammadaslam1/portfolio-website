@@ -1,4 +1,4 @@
-import { Button, Card, Typography } from "@mui/material";
+import { Button, Card, Chip, Typography } from "@mui/material";
 const Portfolio = () => {
   const createRows = (title, description, buttons, languages, link) => {
     return { title, description, buttons, languages, link };
@@ -28,7 +28,7 @@ const Portfolio = () => {
       "MHA's Swift Swap",
       "A simple online exchange website for online goods exchange.",
       ["GitHub", "Live"],
-      ["HTML", "JavaScript", "CSS"],
+      ["HTML", "JavaScript", "Tailwind"],
       [
         "https://github.com/hammadaslam1/mha-s-swift-swap",
         "https://mha-s-swift-swap.web.app",
@@ -78,9 +78,9 @@ const Portfolio = () => {
             elevation={5}
           >
             <Typography
-              variant="h6"
+              variant="h5"
               component="div"
-              sx={{ borderBottom: "1px solid ", padding: "20px" }}
+              sx={{ borderBottom: "1px solid #777777", padding: "20px", fontWeight: '700' }}
             >
               {row.title}
             </Typography>
@@ -110,6 +110,11 @@ const Portfolio = () => {
               ) : (
                 ""
               )}
+            </div>
+            <div style={{borderTop: '1px solid #777777'}}>
+              {row.languages.map((lang) => (
+                <Chip label={lang} sx={{backgroundColor: '#212529'}} />
+              ))}
             </div>
           </Card>
         ))}

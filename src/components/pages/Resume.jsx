@@ -117,6 +117,7 @@ const Resume = () => {
           padding: "10px",
           backgroundColor: "#212529",
         }}
+        elevation={5}
       >
         <div className="resume" style={{ margin: "15px" }}>
           <Typography sx={{ fontSize: "26pt", fontWeight: "600" }}>

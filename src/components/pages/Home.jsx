@@ -3,16 +3,16 @@ import { Typography } from "@mui/material";
 const Home = () => {
     return ( 
         <div className="home">
-            <Typography sx={{fontSize: '32pt', marginY: '5px', width: 'fit-content', boxShadow: '6px 6px 5px #020202'}}>
+            <Typography sx={{fontSize: '28pt', marginY: '10px', width: 'fit-content', boxShadow: '7px 7px 8px #090909'}}>
                 I'm
             </Typography>
-            <Typography sx={{fontSize: '38pt', marginY: '5px', width: 'fit-content', boxShadow: '6px 6px 5px #020202'}}>
+            <Typography sx={{fontSize: '34pt', marginY: '10px', width: 'fit-content', boxShadow: '7px 7px 8px #090909'}}>
                 a Student
             </Typography>
-            <Typography sx={{fontSize: '48pt', marginY: '5px', width: 'fit-content', boxShadow: '6px 6px 5px #020202'}}>
+            <Typography sx={{fontSize: '40pt', marginY: '10px', width: 'fit-content', boxShadow: '7px 7px 8px #090909'}}>
                 Software Developer
             </Typography>
-            <Typography sx={{fontSize: '56pt', marginY: '5px', width: 'fit-content', boxShadow: '6px 6px 5px #020202'}}>
+            <Typography sx={{fontSize: '46pt', marginY: '10px', width: 'fit-content', boxShadow: '7px 7px 8px #090909'}}>
                 Muhammad Hammad Aslam
             </Typography>
         </div>
