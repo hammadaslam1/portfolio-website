@@ -5,6 +5,16 @@ const Portfolio = () => {
   };
   const projectsRow = [
     createRows(
+      "00 Social Club",
+      "A simple UI design using React JS for Double Zero Social Club.",
+      ["GitHub", "Live"],
+      ["React JS", "JavaScript", "Material UI"],
+      [
+        "https://github.com/hammadaslam1/00-Social-Club-UI",
+        "https://mha-dz-social-club.web.app/",
+      ]
+    ),
+    createRows(
       "Blogs Website",
       "A simple Blog website on which you can publish your blogs.",
       ["GitHub", "Live"],
@@ -74,7 +84,7 @@ const Portfolio = () => {
       >
         {projectsRow.map((row) => (
           <Card
-            sx={{ width: "320px", backgroundColor: "#212529", margin: "auto" }}
+            sx={{ maxWidth: "320px", backgroundColor: "#212529", margin: "auto" }}
             elevation={5}
           >
             <Typography
