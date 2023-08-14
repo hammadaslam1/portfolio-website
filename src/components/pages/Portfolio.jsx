@@ -6,7 +6,7 @@ const Portfolio = () => {
   const projectsRow = [
     createRows(
       "00 Social Club",
-      "A simple UI design using React JS for Double Zero Social Club.",
+      "A simple Web based UI design using React JS for Double Zero Social Club.",
       ["GitHub", "Live"],
       ["React JS", "JavaScript", "Material UI"],
       [
@@ -18,7 +18,7 @@ const Portfolio = () => {
       "Blogs Website",
       "A simple Blog website on which you can publish your blogs.",
       ["GitHub", "Live"],
-      ["React JS", "JavaScript"],
+      ["React JS", "JavaScript", "Material UI"],
       [
         "https://github.com/hammadaslam1/mha-blogs",
         "https://blogging-website-mha.web.app",
@@ -84,13 +84,21 @@ const Portfolio = () => {
       >
         {projectsRow.map((row) => (
           <Card
-            sx={{ maxWidth: "320px", backgroundColor: "#212529", margin: "auto" }}
+            sx={{
+              maxWidth: "320px",
+              backgroundColor: "#212529",
+              margin: "auto",
+            }}
             elevation={5}
           >
             <Typography
               variant="h5"
               component="div"
-              sx={{ borderBottom: "1px solid #777777", padding: "20px", fontWeight: '700' }}
+              sx={{
+                borderBottom: "1px solid #777777",
+                padding: "20px",
+                fontWeight: "700",
+              }}
             >
               {row.title}
             </Typography>
@@ -121,9 +129,9 @@ const Portfolio = () => {
                 ""
               )}
             </div>
-            <div style={{borderTop: '1px solid #777777'}}>
+            <div style={{ borderTop: "1px solid #777777" }}>
               {row.languages.map((lang) => (
-                <Chip label={lang} sx={{backgroundColor: '#212529'}} />
+                <Chip label={lang} sx={{ backgroundColor: "#212529" }} />
               ))}
             </div>
           </Card>
