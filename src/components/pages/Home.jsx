@@ -10,7 +10,7 @@ const Home = () => {
                 a Student
             </Typography>
             <Typography sx={{fontSize: '40pt', marginY: '10px', width: 'fit-content', boxShadow: '7px 7px 8px #090909'}}>
-                Software Developer
+                Web Developer
             </Typography>
             <Typography sx={{fontSize: '46pt', marginY: '10px', width: 'fit-content', boxShadow: '7px 7px 8px #090909'}}>
                 Muhammad Hammad Aslam

@@ -72,7 +72,7 @@ const Resume = () => {
       "Front-End Development",
       <Slider
       
-      defaultValue={70}
+      defaultValue={100}
       valueLabelDisplay="auto"
       step={10}
       disabled
