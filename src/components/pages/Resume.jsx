@@ -43,11 +43,31 @@ const Resume = () => {
     createRows("Sep 2016 - 2018", "ICS, BISE Sargodha", "65%"),
     createRows("Sep 2014 - 2016", "Matriculation, BISE Sargodha", "64%"),
   ];
+
+  const sliderStyles = {
+    height: 4,
+    "& .MuiSlider-thumb": {
+      width: 8,
+      height: 8,
+      transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
+      "&:before": {
+        boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)",
+      },
+      "&.Mui-active": {
+        width: 20,
+        height: 20,
+      },
+    },
+    "& .MuiSlider-rail": {
+      opacity: 0.28,
+    },
+  };
   const skillRow = [
     createRows(
       "HTML",
       <Slider
-        
+        sx={sliderStyles}
+        size="small"
         defaultValue={100}
         valueLabelDisplay="auto"
         step={10}
@@ -59,7 +79,8 @@ const Resume = () => {
     createRows(
       "CSS",
       <Slider
-        
+        sx={sliderStyles}
+        size="small"
         defaultValue={100}
         valueLabelDisplay="auto"
         step={10}
@@ -71,32 +92,35 @@ const Resume = () => {
     createRows(
       "Front-End Development",
       <Slider
-      
-      defaultValue={100}
-      valueLabelDisplay="auto"
-      step={10}
-      disabled
-      min={10}
-      max={110}
+        sx={sliderStyles}
+        size="small"
+        defaultValue={100}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
       />
-      ),
-      createRows(
-        "JavaScript",
-        <Slider
-          
-          defaultValue={60}
-          valueLabelDisplay="auto"
-          step={10}
-          disabled
-          min={10}
-          max={110}
-        />
-      ),
-      createRows(
+    ),
+    createRows(
+      "JavaScript",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={80}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
       "React JS",
       <Slider
-        
-        defaultValue={40}
+        sx={sliderStyles}
+        size="small"
+        defaultValue={70}
         valueLabelDisplay="auto"
         step={10}
         disabled
