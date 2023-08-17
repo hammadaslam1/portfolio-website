@@ -57,9 +57,12 @@ const Portfolio = () => {
     createRows(
       "Simple Calculator",
       "A simple calculator that performs basic arithmatic operations.",
-      ["GitHub"],
-      ["HTML", "JavaScript", "CSS"],
-      ["https://github.com/hammadaslam1/calculator"]
+      ["GitHub", "Live"],
+      ["HTML", "JavaScript", "Tailwind"],
+      [
+        "https://github.com/hammadaslam1/calculator",
+        "https://mha-calculator.web.app",
+      ]
     ),
   ];
 
