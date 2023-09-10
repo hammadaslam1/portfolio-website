@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div>
+        <div style={{ position: "sticky", top: 0, zIndex: 2 }}>
           <Navbar />
         </div>
         <Routes>

@@ -1,4 +1,5 @@
 import { Download, WindowSharp } from "@mui/icons-material";
+import html2canvas from "html2canvas";
 import hammad from "./hammad.jpg";
 import {
   Box,
@@ -15,6 +16,9 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
+import GeneratePdf from "./PDF";
+import jsPDF from "jspdf";
+import { useRef } from "react";
 
 const Resume = () => {
   const createRows = (title, value, num = "") => {
@@ -129,6 +133,8 @@ const Resume = () => {
       />
     ),
   ];
+
+  const pdfRef = useRef(null);
 
   return (
     <div className="main-resume" style={{ padding: "20px" }}>
@@ -319,7 +325,7 @@ const Resume = () => {
           </div>
         </div>
       </Card>
-      <Button
+      {/* <Button
         variant="contained"
         color="error"
         startIcon={<Download />}
@@ -329,7 +335,7 @@ const Resume = () => {
         }}
       >
         Download PDF
-      </Button>
+      </Button> */}
     </div>
   );
 };
