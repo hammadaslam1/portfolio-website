@@ -1,3 +1,5 @@
+/* eslint-disable no-dupe-keys */
+/* eslint-disable no-unused-vars */
 import {
   AppBar,
   Box,

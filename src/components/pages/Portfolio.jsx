@@ -1,9 +1,19 @@
-import { Button, Card, Chip, Typography } from "@mui/material";
+import { Card, Chip, Typography } from "@mui/material";
 const Portfolio = () => {
   const createRows = (title, description, buttons, languages, link) => {
     return { title, description, buttons, languages, link };
   };
   const projectsRow = [
+    createRows(
+      "Score Pulse",
+      "A simple Mobile App for managing scores of cricket matches developed using React Native",
+      ["GitHub"],
+      ["React Native", "JavaScript", "Native UI"],
+      [
+        "https://github.com/hammadaslam1/score-pulse",
+        // "https://mha-dz-social-club.web.app/",
+      ]
+    ),
     createRows(
       "00 Social Club",
       "A simple Web based UI design using React JS for Double Zero Social Club.",
@@ -108,7 +118,7 @@ const Portfolio = () => {
             <Typography
               variant="body1"
               component="div"
-              sx={{ backgroundColor: "#121212", padding: "20px" }}
+              sx={{ backgroundColor: "#121212", height: '110px', padding: "20px" }}
             >
               {row.description}
             </Typography>
@@ -121,11 +131,11 @@ const Portfolio = () => {
                 justifyContent: "space-evenly",
               }}
             >
-              <a href={row.link[0]} target="_blank">
+              <a href={row.link[0]} target="_blank" rel="noreferrer">
                 {row.buttons[0]}
               </a>
               {row.buttons[1] ? (
-                <a href={row.link[1]} target="_blank">
+                <a href={row.link[1]} target="_blank" rel="noreferrer">
                   {row.buttons[1]}
                 </a>
               ) : (

@@ -1,9 +1,6 @@
-import { Download, WindowSharp } from "@mui/icons-material";
-import html2canvas from "html2canvas";
+/* eslint-disable jsx-a11y/alt-text */
 import hammad from "./hammad.jpg";
 import {
-  Box,
-  Button,
   Card,
   ImageList,
   ImageListItem,
@@ -16,9 +13,6 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import GeneratePdf from "./PDF";
-import jsPDF from "jspdf";
-import { useRef } from "react";
 
 const Resume = () => {
   const createRows = (title, value, num = "") => {
@@ -133,8 +127,6 @@ const Resume = () => {
       />
     ),
   ];
-
-  const pdfRef = useRef(null);
 
   return (
     <div className="main-resume" style={{ padding: "20px" }}>
