@@ -41,15 +41,15 @@ const About = () => {
           Education in the session 2020-2021 securing 78% marks.
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
-          Now I'm a student of BS Information Technology Post ADP 3rd sem (7th
+          Now I'm a student of BS Information Technology Post ADP 4th sem (8th
           sem BS(hons)) University of Education, Lahore for the session
-          2022-2024. My <strong>CGPA</strong> is <strong>3.62</strong>.
+          2022-2024. My <strong>CGPA</strong> is <strong>3.61</strong>.
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
-          I have interests in programming and web development.
+          Currently I am working on my final year project, "Customer Reviews Classification and Analysis System using Data Mining and NLP". It is basically a system that analyzes the customer reviews and classify them on the basis of fakeness, sentiments, topics and context extraction. These reviews are taken from various E-commerce platforms like<a href="https://www.amazon.com/">Amazon</a>and<a href="https://www.daraz.pk/">Daraz</a>.
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
-          I have developed some projects for Web.
+          I have interests in programming and web development. I have developed some projects for Web and android in React JS and React Native respectively.
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
           I'm looking for the opportunities to enhance my skills.

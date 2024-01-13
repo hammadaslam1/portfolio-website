@@ -8,7 +8,9 @@ import {
   Menu,
   MenuItem,
   Toolbar,
+  Tooltip,
   Typography,
+  Zoom,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -43,19 +45,25 @@ const Navbar = () => {
             }}
           >
             <Toolbar>
-              <Typography
-                variant="h6"
-                component="div"
-                sx={{
-                  flexGrow: 1,
-                  display: { xs: "flex" },
-                  fontSize: "22pt",
-                  fontWeight: "600",
-                }}
+              <Tooltip
                 title="Muhammad Hammad Aslam"
+                TransitionComponent={Zoom}
+                followCursor
               >
-                M H A
-              </Typography>
+                <Typography
+                  variant="h6"
+                  component="div"
+                  sx={{
+                    flexGrow: 1,
+                    display: { xs: "flex" },
+                    fontSize: "22pt",
+                    fontWeight: "600",
+                  }}
+                  // title="Muhammad Hammad Aslam"
+                >
+                  M H A
+                </Typography>
+              </Tooltip>
               <Box sx={{ display: { xs: "block", sm: "block", md: "block" } }}>
                 <Link
                   to="/"

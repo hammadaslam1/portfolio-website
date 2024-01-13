@@ -6,12 +6,12 @@ const Home = () => {
       <Typography
         sx={{
           fontSize: "30pt",
-          letterSpacing: 10,
-          wordSpacing: 10,
+          letterSpacing: 15,
+          wordSpacing: 15,
           marginY: "10px",
           width: "fit-content",
-        //   boxShadow: "0 7px 5px #0f0f0f",
-        fontWeight: 'bold'
+          //   boxShadow: "0 7px 5px #0f0f0f",
+          fontWeight: "bold",
         }}
       >
         I'm
@@ -19,12 +19,12 @@ const Home = () => {
       <Typography
         sx={{
           fontSize: "36pt",
-          letterSpacing: 10,
-          wordSpacing: 10,
+          letterSpacing: 15,
+          wordSpacing: 15,
           marginY: "10px",
           width: "fit-content",
-        //   boxShadow: "0 7px 5px #0f0f0f",
-        fontWeight: 'bold'
+          //   boxShadow: "0 7px 5px #0f0f0f",
+          fontWeight: "bold",
         }}
       >
         a Student
@@ -32,12 +32,12 @@ const Home = () => {
       <Typography
         sx={{
           fontSize: "45pt",
-          letterSpacing: 10,
-          wordSpacing: 10,
+          letterSpacing: 15,
+          wordSpacing: 15,
           marginY: "10px",
           width: "fit-content",
-        //   boxShadow: "0 7px 5px #0f0f0f",
-        fontWeight: 'bold'
+          //   boxShadow: "0 7px 5px #0f0f0f",
+          fontWeight: "bold",
         }}
       >
         a Developer
@@ -45,12 +45,12 @@ const Home = () => {
       <Typography
         sx={{
           fontSize: "48pt",
-          letterSpacing: 10,
-          wordSpacing: 10,
+          letterSpacing: 15,
+          wordSpacing: 15,
           marginY: "10px",
           width: "fit-content",
-        //   boxShadow: "0 7px 5px #0f0f0f",
-        fontWeight: 'bold'
+          //   boxShadow: "0 7px 5px #0f0f0f",
+          fontWeight: "bold",
         }}
       >
         Hammad Aslam

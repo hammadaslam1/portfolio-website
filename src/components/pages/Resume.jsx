@@ -31,7 +31,7 @@ const Resume = () => {
     createRows(
       "Sep 2022 - present",
       "BSIT (Post ADP), University of Education, Lahore",
-      "3.62 CGPA"
+      "3.61 CGPA"
     ),
     createRows(
       "Sep 2018 - 2020",
@@ -87,25 +87,25 @@ const Resume = () => {
         max={110}
       />
     ),
-    createRows(
-      "Front-End Development",
-      <Slider
-        sx={sliderStyles}
-        size="small"
-        defaultValue={100}
-        valueLabelDisplay="auto"
-        step={10}
-        disabled
-        min={10}
-        max={110}
-      />
-    ),
+    // createRows(
+    //   "Front-End Development",
+    //   <Slider
+    //     sx={sliderStyles}
+    //     size="small"
+    //     defaultValue={100}
+    //     valueLabelDisplay="auto"
+    //     step={10}
+    //     disabled
+    //     min={10}
+    //     max={110}
+    //   />
+    // ),
     createRows(
       "JavaScript",
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={80}
+        defaultValue={90}
         valueLabelDisplay="auto"
         step={10}
         disabled
@@ -118,7 +118,59 @@ const Resume = () => {
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={70}
+        defaultValue={80}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "React Native",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={60}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "C++",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={60}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "Python",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={50}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "Kotlin",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={50}
         valueLabelDisplay="auto"
         step={10}
         disabled
@@ -172,7 +224,7 @@ const Resume = () => {
                         <TableCell
                           component="th"
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "3" }}
+                          sx={{ borderBottom: "none", flex: "3", padding: 1 }}
                         >
                           <Typography
                             sx={{ fontSize: "14pt", fontWeight: "600" }}
@@ -182,7 +234,7 @@ const Resume = () => {
                         </TableCell>
                         <TableCell
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "5" }}
+                          sx={{ borderBottom: "none", flex: "5", padding: 1 }}
                         >
                           <Typography sx={{ fontSize: "12pt" }}>
                             {row.value}
@@ -230,7 +282,7 @@ const Resume = () => {
                         <TableCell
                           component="th"
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "3" }}
+                          sx={{ borderBottom: "none", flex: "3", padding: 1 }}
                         >
                           <Typography
                             sx={{ fontSize: "14pt", fontWeight: "600" }}
@@ -240,7 +292,7 @@ const Resume = () => {
                         </TableCell>
                         <TableCell
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "5" }}
+                          sx={{ borderBottom: "none", flex: "5", padding: 1, paddingX: 2 }}
                         >
                           <Typography sx={{ fontSize: "12pt" }}>
                             {row.value}
@@ -248,7 +300,7 @@ const Resume = () => {
                         </TableCell>
                         <TableCell
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "3" }}
+                          sx={{ borderBottom: "none", flex: "3", padding: 1 }}
                         >
                           <Typography sx={{ fontSize: "12pt" }}>
                             {row.num}
@@ -286,7 +338,7 @@ const Resume = () => {
                         <TableCell
                           component="th"
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "3" }}
+                          sx={{ borderBottom: "none", flex: "3", padding: 1 }}
                         >
                           <Typography
                             sx={{ fontSize: "14pt", fontWeight: "600" }}
@@ -296,7 +348,7 @@ const Resume = () => {
                         </TableCell>
                         <TableCell
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "5" }}
+                          sx={{ borderBottom: "none", flex: "5", padding: 1 }}
                         >
                           <Typography sx={{ fontSize: "12pt" }}>
                             {row.value}
@@ -304,7 +356,7 @@ const Resume = () => {
                         </TableCell>
                         <TableCell
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "3" }}
+                          sx={{ borderBottom: "none", flex: "3", padding: 1 }}
                         >
                           <Typography sx={{ fontSize: "12pt" }}></Typography>
                         </TableCell>

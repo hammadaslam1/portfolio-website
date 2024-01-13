@@ -5,6 +5,16 @@ const Portfolio = () => {
   };
   const projectsRow = [
     createRows(
+      "Reviews Classifier",
+      "A system that analyzes the customer reviews and classify them on the basis of fakeness, sentiments, topics and context (Not completed yet)",
+      ["GitHub"],
+      ["Python", "Flask", "JavaScript", "React JS"],
+      [
+        "https://github.com/hammadaslam1/reviews-classifier",
+        // "https://mha-dz-social-club.web.app/",
+      ]
+    ),
+    createRows(
       "Score Pulse",
       "A simple Mobile App for managing scores of cricket matches developed using React Native",
       ["GitHub"],
@@ -118,7 +128,11 @@ const Portfolio = () => {
             <Typography
               variant="body1"
               component="div"
-              sx={{ backgroundColor: "#121212", height: '110px', padding: "20px" }}
+              sx={{
+                backgroundColor: "#121212",
+                height: "110px",
+                padding: "20px",
+              }}
             >
               {row.description}
             </Typography>
