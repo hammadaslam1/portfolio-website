@@ -5,7 +5,17 @@ const Portfolio = () => {
   };
   const projectsRow = [
     createRows(
-      "Reviews Classifier",
+      "Hammad Aslam",
+      "My Portfolio developed in React JS with custom styling using CSS",
+      ["GitHub", "Live"],
+      ["Python", "Flask", "JavaScript", "React JS"],
+      [
+        "https://github.com/hammadaslam1/reviews-classifier",
+        "https://hammad-resume.web.app/",
+      ]
+    ),
+    createRows(
+      "OpinioMine",
       "A system that analyzes the customer reviews and classify them on the basis of fakeness, sentiments, topics and context (Not completed yet)",
       ["GitHub"],
       ["Python", "Flask", "JavaScript", "React JS"],
