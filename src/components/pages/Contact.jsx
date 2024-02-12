@@ -6,6 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { FaDiscord } from "react-icons/fa6";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Contact = () => {
   return (
@@ -19,7 +20,16 @@ const Contact = () => {
       <Typography sx={{ fontSize: "40pt", marginBottom: "60px" }}>
         Contact
       </Typography>
-      <div style={{maxWidth:'750px', alignSelf: 'center', margin: 'auto', display: 'flex', flexWrap:'wrap', justifyContent: 'center'}}>
+      <div
+        style={{
+          maxWidth: "750px",
+          alignSelf: "center",
+          margin: "auto",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
         <a
           href="https://github.com/hammadaslam1"
           target="_blank"
@@ -57,7 +67,7 @@ const Contact = () => {
           </IconButton>
         </a>
         <a
-          href="https://web.facebook.com/hammadaslam.308"
+          href="https://web.facebook.com/hammadaslam101"
           target="_blank"
           rel="noreferrer"
         >
@@ -66,7 +76,7 @@ const Contact = () => {
           </IconButton>
         </a>
         <a
-          href="https://twitter.com/HammadAslam_308"
+          href="https://twitter.com/hammadaslam_10"
           target="_blank"
           rel="noreferrer"
         >
@@ -75,12 +85,21 @@ const Contact = () => {
           </IconButton>
         </a>
         <a
-          href="https://discord.com/channels/@me"
+          href="https://discordapp.com/users/1061504929681911879"
           target="_blank"
           rel="noreferrer"
         >
           <IconButton size="large" sx={{ boxShadow: "3px 4px 10px #090909" }}>
             <FaDiscord size={"35px"} />
+          </IconButton>
+        </a>
+        <a
+          href="https://wa.me/qr/7R7TGR2TSQAEE1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <IconButton size="large" sx={{ boxShadow: "3px 4px 10px #090909" }}>
+            <WhatsAppIcon fontSize="large" />
           </IconButton>
         </a>
       </div>

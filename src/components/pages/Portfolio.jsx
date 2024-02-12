@@ -10,7 +10,7 @@ const Portfolio = () => {
       ["GitHub", "Live"],
       ["Python", "Flask", "JavaScript", "React JS"],
       [
-        "https://github.com/hammadaslam1/reviews-classifier",
+        "https://github.com/hammadaslam1/portfolio-practice",
         "https://hammad-resume.web.app/",
       ]
     ),

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/alt-text */
 import hammad from "./hammad.jpg";
 import {
@@ -24,8 +25,26 @@ const Resume = () => {
     createRows("Email Address", "hammadaslam308@gmail.com"),
     createRows("Phone Number", "0092 307 4304204"),
     createRows("DOB", "19-11-2000"),
-    createRows("Github", "hammadaslam1"),
-    createRows("LinkedIn", "hammadaslam10"),
+    createRows(
+      "Github",
+      <a
+        href="https://github.com/hammadaslam1"
+        target="_blank"
+        style={{ textDecoration: "none" }}
+      >
+        hammadaslam1
+      </a>
+    ),
+    createRows(
+      "LinkedIn",
+      <a
+        href="https://linkedin.com/in/hammadaslam10"
+        target="_blank"
+        style={{ textDecoration: "none" }}
+      >
+        hammadaslam10
+      </a>
+    ),
   ];
   const educationRow = [
     createRows(
@@ -220,7 +239,7 @@ const Resume = () => {
                 <Table>
                   <TableBody>
                     {personalRow.map((row) => (
-                      <TableRow sx={{ display: "flex" }}>
+                      <TableRow sx={{ display: "flex", alignItems: "center" }}>
                         <TableCell
                           component="th"
                           scope="row"
@@ -292,7 +311,12 @@ const Resume = () => {
                         </TableCell>
                         <TableCell
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "5", padding: 1, paddingX: 2 }}
+                          sx={{
+                            borderBottom: "none",
+                            flex: "5",
+                            padding: 1,
+                            paddingX: 2,
+                          }}
                         >
                           <Typography sx={{ fontSize: "12pt" }}>
                             {row.value}
