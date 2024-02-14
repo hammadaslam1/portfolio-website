@@ -7,6 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { FaDiscord } from "react-icons/fa6";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { TbBrandFiverr } from "react-icons/tb";
 
 const Contact = () => {
   return (
@@ -30,6 +31,15 @@ const Contact = () => {
           justifyContent: "center",
         }}
       >
+        <a
+          href="https://www.fiverr.com/hammadaslam10"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <IconButton size="large" sx={{ boxShadow: "3px 4px 10px #090909" }}>
+            <TbBrandFiverr size={"35px"} />
+          </IconButton>
+        </a>
         <a
           href="https://github.com/hammadaslam1"
           target="_blank"
