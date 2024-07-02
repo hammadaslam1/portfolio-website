@@ -5,10 +5,20 @@ const Portfolio = () => {
   };
   const projectsRow = [
     createRows(
+      "Smart FYPMS",
+      "Web based Smart FYP Management System for University of Education, Lahore, Pakistan developed using MERN Stack with Material UI components",
+      ["GitHub"],
+      ["MongoDB", "Express.js", "React.js", "MUI"],
+      [
+        "https://github.com/ahsanisdeveloping/smart-fyp-project",
+        // "https://hammad-resume.web.app/",
+      ]
+    ),
+    createRows(
       "Hammad Aslam",
       "My Portfolio developed in React JS with custom styling using CSS",
       ["GitHub", "Live"],
-      ["Python", "Flask", "JavaScript", "React JS"],
+      ["JavaScript", "React.js"],
       [
         "https://github.com/hammadaslam1/portfolio-practice",
         "https://hammad-resume.web.app/",
@@ -16,9 +26,9 @@ const Portfolio = () => {
     ),
     createRows(
       "OpinioMine",
-      "A system that analyzes the customer reviews and classify them on the basis of fakeness, sentiments, topics and context (Not completed yet)",
+      "A system (for my Capstone Project of BSIT) that analyzes the customer reviews and classify them on the basis of topics, sentiments, helpfulness and fakeness",
       ["GitHub"],
-      ["Python", "Flask", "JavaScript", "React JS"],
+      ["Python", "MongoDB", "Express.js", "React.js"],
       [
         "https://github.com/hammadaslam1/reviews-classifier",
         // "https://mha-dz-social-club.web.app/",
@@ -38,7 +48,7 @@ const Portfolio = () => {
       "00 Social Club",
       "A simple Web based UI design using React JS for Double Zero Social Club.",
       ["GitHub", "Live"],
-      ["React JS", "JavaScript", "Material UI"],
+      ["React.js", "JavaScript", "MUI"],
       [
         "https://github.com/hammadaslam1/00-Social-Club-UI",
         "https://mha-dz-social-club.web.app/",
@@ -48,7 +58,7 @@ const Portfolio = () => {
       "Blogs Website",
       "A simple Blog website on which you can publish your blogs.",
       ["GitHub", "Live"],
-      ["React JS", "JavaScript", "Material UI"],
+      ["React.js", "JavaScript", "MUI"],
       [
         "https://github.com/hammadaslam1/mha-blogs",
         "https://blogging-website-mha.web.app",
@@ -58,7 +68,7 @@ const Portfolio = () => {
       "To-Do App",
       "A simple To-Do app developed using React JS.",
       ["GitHub", "Live"],
-      ["React JS", "JavaScript"],
+      ["React.js", "JavaScript"],
       [
         "https://github.com/hammadaslam1/to-do-React-js",
         "https://todo-app-reactjsx.web.app",
@@ -140,7 +150,7 @@ const Portfolio = () => {
               component="div"
               sx={{
                 backgroundColor: "#121212",
-                height: "110px",
+                height: "130px",
                 padding: "20px",
               }}
             >
@@ -166,7 +176,7 @@ const Portfolio = () => {
                 ""
               )}
             </div>
-            <div style={{ borderTop: "1px solid #777777" }}>
+            <div style={{ borderTop: "1px solid #777777", height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly' }}>
               {row.languages.map((lang) => (
                 <Chip label={lang} sx={{ backgroundColor: "#212529" }} />
               ))}

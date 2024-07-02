@@ -48,9 +48,9 @@ const Resume = () => {
   ];
   const educationRow = [
     createRows(
-      "Sep 2022 - present",
+      "Sep 2022 - 2024",
       "BSIT (Post ADP), University of Education, Lahore",
-      "3.61 CGPA"
+      "3.64 CGPA"
     ),
     createRows(
       "Sep 2018 - 2020",
@@ -62,26 +62,26 @@ const Resume = () => {
   ];
 
   const sliderStyles = {
-    height: 4,
+    height: 14,
     "& .MuiSlider-thumb": {
-      width: 8,
-      height: 8,
+      width: 0,
+      height: 0,
       transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
       "&:before": {
         boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)",
       },
       "&.Mui-active": {
-        width: 20,
-        height: 20,
+        width: 40,
+        height: 40,
       },
     },
     "& .MuiSlider-rail": {
-      opacity: 0.28,
+      opacity: 0.2,
     },
   };
   const skillRow = [
     createRows(
-      "HTML",
+      "Frontend Web Development",
       <Slider
         sx={sliderStyles}
         size="small"
@@ -93,19 +93,19 @@ const Resume = () => {
         max={110}
       />
     ),
-    createRows(
-      "CSS",
-      <Slider
-        sx={sliderStyles}
-        size="small"
-        defaultValue={100}
-        valueLabelDisplay="auto"
-        step={10}
-        disabled
-        min={10}
-        max={110}
-      />
-    ),
+    // createRows(
+    //   "CSS",
+    //   <Slider
+    //     sx={sliderStyles}
+    //     size="small"
+    //     defaultValue={100}
+    //     valueLabelDisplay="auto"
+    //     step={10}
+    //     disabled
+    //     min={10}
+    //     max={110}
+    //   />
+    // ),
     // createRows(
     //   "Front-End Development",
     //   <Slider
@@ -137,7 +137,7 @@ const Resume = () => {
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={80}
+        defaultValue={90}
         valueLabelDisplay="auto"
         step={10}
         disabled
@@ -150,7 +150,7 @@ const Resume = () => {
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={60}
+        defaultValue={70}
         valueLabelDisplay="auto"
         step={10}
         disabled
@@ -158,12 +158,25 @@ const Resume = () => {
         max={110}
       />
     ),
+    // createRows(
+    //   "C++",
+    //   <Slider
+    //     sx={sliderStyles}
+    //     size="small"
+    //     defaultValue={60}
+    //     valueLabelDisplay="auto"
+    //     step={10}
+    //     disabled
+    //     min={10}
+    //     max={110}
+    //   />
+    // ),
     createRows(
-      "C++",
+      "MERN Stack",
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={60}
+        defaultValue={90}
         valueLabelDisplay="auto"
         step={10}
         disabled
@@ -176,7 +189,7 @@ const Resume = () => {
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={50}
+        defaultValue={80}
         valueLabelDisplay="auto"
         step={10}
         disabled
@@ -185,7 +198,20 @@ const Resume = () => {
       />
     ),
     createRows(
-      "Kotlin",
+      "Web Scraping / Automation",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={80}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "Data Analysis",
       <Slider
         sx={sliderStyles}
         size="small"
@@ -362,7 +388,7 @@ const Resume = () => {
                         <TableCell
                           component="th"
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "3", padding: 1 }}
+                          sx={{ borderBottom: "none", flex: "4", padding: 1 }}
                         >
                           <Typography
                             sx={{ fontSize: "14pt", fontWeight: "600" }}
@@ -372,7 +398,7 @@ const Resume = () => {
                         </TableCell>
                         <TableCell
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "5", padding: 1 }}
+                          sx={{ borderBottom: "none", flex: "6", padding: 1 }}
                         >
                           <Typography sx={{ fontSize: "12pt" }}>
                             {row.value}
@@ -380,7 +406,7 @@ const Resume = () => {
                         </TableCell>
                         <TableCell
                           scope="row"
-                          sx={{ borderBottom: "none", flex: "3", padding: 1 }}
+                          sx={{ borderBottom: "none", flex: "1", padding: 1 }}
                         >
                           <Typography sx={{ fontSize: "12pt" }}></Typography>
                         </TableCell>
