@@ -81,11 +81,11 @@ const Resume = () => {
   };
   const skillRow = [
     createRows(
-      "Frontend Web Development",
+      "JavaScript",
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={100}
+        defaultValue={90}
         valueLabelDisplay="auto"
         step={10}
         disabled
@@ -93,34 +93,21 @@ const Resume = () => {
         max={110}
       />
     ),
-    // createRows(
-    //   "CSS",
-    //   <Slider
-    //     sx={sliderStyles}
-    //     size="small"
-    //     defaultValue={100}
-    //     valueLabelDisplay="auto"
-    //     step={10}
-    //     disabled
-    //     min={10}
-    //     max={110}
-    //   />
-    // ),
-    // createRows(
-    //   "Front-End Development",
-    //   <Slider
-    //     sx={sliderStyles}
-    //     size="small"
-    //     defaultValue={100}
-    //     valueLabelDisplay="auto"
-    //     step={10}
-    //     disabled
-    //     min={10}
-    //     max={110}
-    //   />
-    // ),
     createRows(
-      "JavaScript",
+      "MongoDB",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={90}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "Express JS",
       <Slider
         sx={sliderStyles}
         size="small"
@@ -158,25 +145,38 @@ const Resume = () => {
         max={110}
       />
     ),
-    // createRows(
-    //   "C++",
-    //   <Slider
-    //     sx={sliderStyles}
-    //     size="small"
-    //     defaultValue={60}
-    //     valueLabelDisplay="auto"
-    //     step={10}
-    //     disabled
-    //     min={10}
-    //     max={110}
-    //   />
-    // ),
     createRows(
-      "MERN Stack",
+      "Node JS",
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={90}
+        defaultValue={70}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "PostgreSQL",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={80}
+        valueLabelDisplay="auto"
+        step={10}
+        disabled
+        min={10}
+        max={110}
+      />
+    ),
+    createRows(
+      "Supabase",
+      <Slider
+        sx={sliderStyles}
+        size="small"
+        defaultValue={80}
         valueLabelDisplay="auto"
         step={10}
         disabled
@@ -203,19 +203,6 @@ const Resume = () => {
         sx={sliderStyles}
         size="small"
         defaultValue={80}
-        valueLabelDisplay="auto"
-        step={10}
-        disabled
-        min={10}
-        max={110}
-      />
-    ),
-    createRows(
-      "Data Analysis",
-      <Slider
-        sx={sliderStyles}
-        size="small"
-        defaultValue={50}
         valueLabelDisplay="auto"
         step={10}
         disabled
