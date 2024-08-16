@@ -26,7 +26,7 @@ const Portfolio = () => {
     ),
     createRows(
       "OpinioMine",
-      "A system (for my Capstone Project of BSIT) that analyzes the customer reviews and classify them on the basis of topics, sentiments, helpfulness and fakeness",
+      "A system (for my BSIT Capstone Project) that analyzes the customer reviews and classify them on the basis of topics, sentiments and helpfulness",
       ["GitHub"],
       ["Python", "MongoDB", "Express.js", "React.js"],
       [

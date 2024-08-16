@@ -17,8 +17,7 @@ const About = () => {
         }}
       >
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
-          I'm Hammad Aslam, an Information Technology student from Jauharabad,
-          Pakistan.
+          I'm Hammad Aslam, a recent IT Graduate from Jauharabad, Pakistan.
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
           I have done my Matriculation from Govt. Jauhar Memorial High School,
@@ -43,16 +42,19 @@ const About = () => {
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
           I have done my BS Information Technology (Post ADP) University of
           Education, Lahore in the session 2022-2024. My <strong>CGPA</strong>{" "}
-          is <strong>3.64</strong>.
+          is <strong>3.6</strong>
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
           I have worked on my final year project, "Customer Reviews
           Classification and Analysis System using Data Mining and NLP".
           Basically it is a system that analyzes the customer reviews and
-          classify them on the basis of topics, sentiments, helpfulness and
-          fakeness. These reviews are taken from various E-commerce platforms
-          like<a href="https://www.amazon.com/">Amazon</a>and
+          classify them on the basis of topics, sentiments and helpfulness.
+          These reviews are taken from various E-commerce platforms like
+          <a href="https://www.amazon.com/">Amazon</a>and
           <a href="https://www.daraz.pk/">Daraz.</a>
+        </Typography>
+        <Typography sx={{fontSize: '16pt', marginY: '35px'}}>
+          I'm currently working on a Smart FYP Management System. This system is all about digitalizing the process of Capstone Project between supervisors, coordinators and students of final year.
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
           I have interests in Data Science and Web Development. I have developed
