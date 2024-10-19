@@ -42,7 +42,13 @@ const About = () => {
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
           I have done my BS Information Technology (Post ADP) University of
           Education, Lahore in the session 2022-2024. My <strong>CGPA</strong>{" "}
-          is <strong>3.6</strong>
+          is <strong>3.63</strong>
+        </Typography>
+        <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
+          I recently attended an Apprenticeship program for IT Graduates under
+          PSEB (Pakistan Software Export Board) in the Known Health Care IT
+          Company "Maaz Informatics" in Sargodha, where I spent 2 months as a
+          MERN Stack and Next JS apprentice.
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
           I have worked on my final year project, "Customer Reviews
@@ -53,8 +59,10 @@ const About = () => {
           <a href="https://www.amazon.com/">Amazon</a>and
           <a href="https://www.daraz.pk/">Daraz.</a>
         </Typography>
-        <Typography sx={{fontSize: '16pt', marginY: '35px'}}>
-          I'm currently working on a Smart FYP Management System. This system is all about digitalizing the process of Capstone Project between supervisors, coordinators and students of final year.
+        <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
+          I worked on a Smart FYP Management System. This system is all about
+          digitalizing the process of Capstone Project between supervisors,
+          coordinators and students of final year.
         </Typography>
         <Typography sx={{ fontSize: "16pt", marginY: "35px" }}>
           I have interests in Data Science and Web Development. I have developed

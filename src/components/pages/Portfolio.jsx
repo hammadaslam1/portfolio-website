@@ -7,11 +7,11 @@ const Portfolio = () => {
     createRows(
       "Smart FYPMS",
       "Web based Smart FYP Management System for University of Education, Lahore, Pakistan developed using MERN Stack with Material UI components",
-      ["GitHub"],
+      ["GitHub", "Live"],
       ["MongoDB", "Express.js", "React.js", "MUI"],
       [
         "https://github.com/ahsanisdeveloping/smart-fyp-project",
-        // "https://hammad-resume.web.app/",
+        "https://fypms-ue.vercel.app/",
       ]
     ),
     createRows(
@@ -105,7 +105,48 @@ const Portfolio = () => {
       ]
     ),
   ];
-
+  const maazProjects = [
+    createRows(
+      "Chat App - Admin / Users",
+      "Web based Chat App developed for communication between admin and multiple users developed in Next JS",
+      ["GitHub", "Live"],
+      ["Next.js", "Socket.io", "Prisma", "MySQL", "MUI"],
+      [
+        "https://github.com/hammadaslam1/Maaz-Informatics-Apprenticeship/tree/main/chatapp_admin_user",
+        "https://hammad-chat-next.vercel.app/",
+      ]
+    ),
+    createRows(
+      "WhatsApp Clone",
+      "Web based Chat App developed for communication between multiple users developed in MERN Stack",
+      ["GitHub"],
+      ["MongoDB", "Express.js", "React.js", "Socket.io", "MUI"],
+      [
+        "https://github.com/hammadaslam1/Maaz-Informatics-Apprenticeship/tree/main/chatapp_multiple_users",
+        // "https://hammad-chat-next.vercel.app/",
+      ]
+    ),
+    createRows(
+      "CRUD Operations",
+      "CRUD operations are performed including file uploading and updating into multiple collections in MERN Stack",
+      ["GitHub"],
+      ["MongoDB", "Express.js", "React.js", "Multer", "MUI"],
+      [
+        "https://github.com/hammadaslam1/Maaz-Informatics-Apprenticeship/tree/main/Task%2003",
+        // "https://hammad-chat-next.vercel.app/",
+      ]
+    ),
+    createRows(
+      "Blogging Site",
+      "Blogging Site including image uploading using Firebase Storage in MERN Stack",
+      ["GitHub"],
+      ["MongoDB", "Express.js", "React.js", "Firebase Storage", "MUI"],
+      [
+        "https://github.com/hammadaslam1/Maaz-Informatics-Apprenticeship/tree/main/Task%2003",
+        // "https://hammad-chat-next.vercel.app/",
+      ]
+    ),
+  ];
   return (
     <div
       style={{
@@ -117,20 +158,34 @@ const Portfolio = () => {
       <Typography sx={{ fontSize: "40pt", marginBottom: "20px" }}>
         My Projects
       </Typography>
+      <Typography
+        sx={{
+          fontSize: "30pt",
+          marginY: "15px",
+          paddingY: "5px",
+          pl: 10,
+          textAlign: "left",
+          backgroundColor: "#212529",
+        }}
+      >
+        Under Apprenticeship
+      </Typography>
       <div
         className="pojects"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(3,2fr)",
           gap: "45px 5px",
+          marginBottom: "20px",
         }}
       >
-        {projectsRow.map((row) => (
+        {maazProjects.map((row) => (
           <Card
             sx={{
               maxWidth: "320px",
               backgroundColor: "#212529",
               margin: "auto",
+              height: "100%",
             }}
             elevation={5}
           >
@@ -139,8 +194,9 @@ const Portfolio = () => {
               component="div"
               sx={{
                 borderBottom: "1px solid #777777",
-                padding: "20px",
+                paddingY: "20px",
                 fontWeight: "700",
+                flexGrow: 1,
               }}
             >
               {row.title}
@@ -176,7 +232,106 @@ const Portfolio = () => {
                 ""
               )}
             </div>
-            <div style={{ borderTop: "1px solid #777777", height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly' }}>
+            <div
+              style={{
+                borderTop: "1px solid #777777",
+                minHeight: "50px",
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                justifyContent: "space-evenly",
+              }}
+            >
+              {row.languages.map((lang) => (
+                <Chip label={lang} sx={{ backgroundColor: "#212529" }} />
+              ))}
+            </div>
+          </Card>
+        ))}
+      </div>
+      <Typography
+        sx={{
+          fontSize: "30pt",
+          marginY: "15px",
+          paddingY: "5px",
+          pl: 10,
+          textAlign: "left",
+          backgroundColor: "#212529",
+        }}
+      >
+        Self Porjects
+      </Typography>
+      <div
+        className="pojects"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3,2fr)",
+          gap: "45px 5px",
+        }}
+      >
+        {projectsRow.map((row) => (
+          <Card
+            sx={{
+              maxWidth: "320px",
+              backgroundColor: "#212529",
+              margin: "auto",
+              height: "100%",
+            }}
+            elevation={5}
+          >
+            <Typography
+              variant="h5"
+              component="div"
+              sx={{
+                borderBottom: "1px solid #777777",
+                paddingY: "20px",
+                fontWeight: "700",
+                flexGrow: 1,
+              }}
+            >
+              {row.title}
+            </Typography>
+            <Typography
+              variant="body1"
+              component="div"
+              sx={{
+                backgroundColor: "#121212",
+                height: "130px",
+                padding: "20px",
+              }}
+            >
+              {row.description}
+            </Typography>
+            <div
+              className="btn"
+              style={{
+                backgroundColor: "#121212",
+                padding: "20px",
+                display: "flex",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <a href={row.link[0]} target="_blank" rel="noreferrer">
+                {row.buttons[0]}
+              </a>
+              {row.buttons[1] ? (
+                <a href={row.link[1]} target="_blank" rel="noreferrer">
+                  {row.buttons[1]}
+                </a>
+              ) : (
+                ""
+              )}
+            </div>
+            <div
+              style={{
+                borderTop: "1px solid #777777",
+                minHeight: "50px",
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                justifyContent: "space-evenly",
+              }}
+            >
               {row.languages.map((lang) => (
                 <Chip label={lang} sx={{ backgroundColor: "#212529" }} />
               ))}
