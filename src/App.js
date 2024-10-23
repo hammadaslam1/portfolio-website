@@ -6,6 +6,7 @@ import About from "./components/pages/About";
 import Resume from "./components/pages/Resume";
 import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";
+import CV from "./components/pages/MeriCV";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/resume" element={<Resume />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/portfolio" element={<Portfolio />}></Route>
+          <Route path="/cv" element={<CV />}></Route>
         </Routes>
       </Router>
     </div>

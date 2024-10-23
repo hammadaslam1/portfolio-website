@@ -50,7 +50,7 @@ const Resume = () => {
     createRows(
       "Sep 2022 - 2024",
       "BSIT (Post ADP), University of Education, Lahore",
-      "3.64 CGPA"
+      "3.63 CGPA"
     ),
     createRows(
       "Sep 2018 - 2020",
@@ -159,24 +159,11 @@ const Resume = () => {
       />
     ),
     createRows(
-      "PostgreSQL",
+      "Next JS",
       <Slider
         sx={sliderStyles}
         size="small"
-        defaultValue={80}
-        valueLabelDisplay="auto"
-        step={10}
-        disabled
-        min={10}
-        max={110}
-      />
-    ),
-    createRows(
-      "Supabase",
-      <Slider
-        sx={sliderStyles}
-        size="small"
-        defaultValue={80}
+        defaultValue={70}
         valueLabelDisplay="auto"
         step={10}
         disabled
