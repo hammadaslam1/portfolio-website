@@ -10,7 +10,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { TbBrandFiverr } from "react-icons/tb";
 import { SiHackerrank } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa6";
-
+import { BiLogoUpwork } from "react-icons/bi";
 const Contact = () => {
   return (
     <div
@@ -41,6 +41,16 @@ const Contact = () => {
         >
           <IconButton size="large" sx={{ boxShadow: "3px 4px 10px #090909" }}>
             <TbBrandFiverr size={"35px"} />
+          </IconButton>
+        </a>
+        <a
+          href="https://upwork.com/freelancers/~01e0a51cb5c5d9544b"
+          target="_blank"
+          rel="noreferrer"
+          title="Upwork"
+        >
+          <IconButton size="large" sx={{ boxShadow: "3px 4px 10px #090909" }}>
+            <BiLogoUpwork size={"35px"} />
           </IconButton>
         </a>
         <a
