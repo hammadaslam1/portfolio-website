@@ -5,7 +5,7 @@
   text-align: center;
   min-height: 100vh;
   color: white;
-  background-color: #121212;
+  background-color: #121212 !important;
 }
 
 .home {
@@ -33,4 +33,9 @@ a{
   background-color: #e6e6e6;
   color: #121212;
   border: 1px solid #e6e6e6;
+}
+
+.page {
+  overflow-y: hidden !important;
+  aspect-ratio: 1 / 1.414 !important;
 }
