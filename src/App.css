@@ -36,6 +36,10 @@ a{
 }
 
 .page {
-  overflow-y: hidden !important;
-  aspect-ratio: 1 / 1.414 !important;
+  /* overflow: hidden !important; */
+  /* aspect-ratio: 1 / 1.300 !important; */
+}
+
+.react-pdf__Page__textContent {
+  display: none !important;
 }

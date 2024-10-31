@@ -64,6 +64,7 @@ const Resume = () => {
             key={`page_${index + 1}`}
             style={{
               marginTop: "20px",
+              padding: 'none',
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
