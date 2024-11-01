@@ -259,7 +259,7 @@ const Portfolio = () => {
           backgroundColor: "#212529",
         }}
       >
-        Self Porjects
+        Self Projects
       </Typography>
       <div
         className="pojects"
