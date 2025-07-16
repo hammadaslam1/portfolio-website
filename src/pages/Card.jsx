@@ -30,7 +30,7 @@ const Card = () => {
         <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
           <ambientLight intensity={Math.PI} />
           <Physics
-            debug={true}
+            debug={false}
             interpolate
             gravity={[0, -40, 0]}
             timeStep={1 / 60}
