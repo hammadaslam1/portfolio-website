@@ -8,15 +8,12 @@ import {
   useGLTF,
   useTexture,
 } from "@react-three/drei";
-import { useControls } from "leva";
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 useGLTF.preload("/hammad.glb");
 useTexture.preload("/hammadaslam.png");
 
 const Card = () => {
-  const { debug } = useControls({ debug: false });
-
   return (
     <div
       style={{
@@ -33,7 +30,7 @@ const Card = () => {
         <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
           <ambientLight intensity={Math.PI} />
           <Physics
-            debug={debug}
+            debug={true}
             interpolate
             gravity={[0, -40, 0]}
             timeStep={1 / 60}
