@@ -11,7 +11,7 @@ import {
 import { useControls } from "leva";
 
 extend({ MeshLineGeometry, MeshLineMaterial });
-useGLTF.preload("/tag.glb");
+useGLTF.preload("/hammad.glb");
 useTexture.preload("/hammadaslam.png");
 
 const Card = () => {

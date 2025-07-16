@@ -21,8 +21,8 @@ const Band = ({ maxSpeed = 50, minSpeed = 10 }) => {
     linearDamping: 2,
   };
   // const { nodes, materials } = useGLTF("/tag.glb");
-  // const { nodes, materials } = useGLTF("/hammad.glb");
-  const { nodes, materials } = useGLTF("/senior_resource.glb");
+  const { nodes, materials } = useGLTF("/hammad.glb");
+  // const { nodes, materials } = useGLTF("/senior_resource.glb");
   const texture = useTexture("/hammadaslam.png");
   const { width, height } = useThree((state) => state.size);
   const [curve] = useState(
